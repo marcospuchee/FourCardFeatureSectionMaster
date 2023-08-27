@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+header {
+    text-align: center;
+
+    .heading:nth-of-type(1){
+        margin-top: 6rem;
+    }
+
+    p {
+        margin: 2.5rem auto 6rem auto;
+        @include m.desktop {
+            margin-bottom: 3rem;
+        }
+        width: min(55rem, 90%);
+    }
+}

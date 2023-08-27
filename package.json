@@ -1,0 +1,21 @@
+{
+  "name": "four_card_project",
+  "version": "1.0.0",
+  "description": "4 columns, challenging design.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Marcos Puche",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.66.1"
+  }
+}

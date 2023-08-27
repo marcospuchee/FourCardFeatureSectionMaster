@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    background-color: v.$veryLightGray;
+    color: v.$veryDarkBlue;
+}
+
+p {
+    color: lighten($color: v.$veryDarkBlue, $amount: 40);
+    line-height: 1.8;
+}
+
+.contenedor {
+    width: min(85%, 120rem);
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.8rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+.light {
+    font-weight: 300;
+}

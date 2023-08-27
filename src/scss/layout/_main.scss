@@ -1,0 +1,70 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.blocks {
+    @include m.desktop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 3rem;
+    }
+    
+
+    // Container styles
+    .two-block {
+        @include m.desktop {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+        }
+        margin: 3rem 0;
+        .block:nth-of-type(2) {
+            margin-top: 3rem;
+        }
+
+    }
+
+    .red { 
+        border-top: 3px solid v.$red;
+    }
+    .blue {
+        border-top: 3px solid v.$blue;
+        margin-bottom: 3rem;
+        @include m.desktop {
+            margin-bottom: 0;
+        }
+    }
+    .green {
+        border-top: 3px solid v.$cyan;
+    }
+    .yellow {
+        border-top: 3px solid v.$orange;
+    }
+
+}
+
+.block {
+    border-radius: 0.7rem;
+    max-width: 50rem;
+    margin: 0 auto;
+
+    // box shadow
+    -webkit-box-shadow: 0px 16px 14px 0px rgba(80,85,130,0.16);
+    -moz-box-shadow: 0px 16px 14px 0px rgba(80,85,130,0.16);
+    box-shadow: 0px 16px 14px 0px rgba(80,85,130,0.16);
+
+    .block-content {
+        padding: 3.3rem;
+    }
+
+    p {
+        margin: 1rem 0 2.2rem 0;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    svg {
+        margin-top: 2rem;
+    }
+}
